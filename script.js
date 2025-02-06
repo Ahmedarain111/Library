@@ -1,13 +1,15 @@
 const myLibrary = [];
 
-function Book(name, author, read) {
+function Book(name, author) {
     this.name = name;
     this.author = author;
-    this.read = read;
 }
 
 function addBookToLibrary(book) {
-    myLibrary.push(book);
+    let name = prompt("Book name: ");
+    let author = prompt("Author's name: ");
+
+    myLibrary.push(new Book(name, author));
 }
 
 function displayBooks()  {
@@ -17,6 +19,7 @@ function displayBooks()  {
 }
 
 
-addBookToLibrary(new Book("ABC", "QWE", true));
-addBookToLibrary(new Book("ABC", "QWE", true));
+const addButton = document.querySelector('button');
+addButton.addEventListener('click', () => addBookToLibrary());
+
 displayBooks();
