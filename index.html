@@ -12,7 +12,8 @@
 <body>
     <header>
         <span>Library</span>
-        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <button class="addBook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                fill="currentColor">
                 <rect x="10" y="4" width="4" height="16" />
                 <rect x="4" y="10" width="16" height="4" />
             </svg>
@@ -23,6 +24,23 @@
 
         </div>
     </main>
+    <dialog>
+        <h1>Add Book
+            <hr>
+        </h1>
+        <form action="">
+            <label for="bookName">Name:</label>
+            <input type="text" id="bookName" required>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" required>
+            <label for="bookPages">No of pages:</label>
+            <input type="number" id="bookPages" required>
+            <label for="readCheck">
+                <input type="checkbox" name="" id="readCheck"> Read
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
 </body>
 
 </html>
