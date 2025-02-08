@@ -123,3 +123,7 @@ dialog button {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+.warning {
+    border-color: red;
+}
